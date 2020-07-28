@@ -1,0 +1,28 @@
+pragma solidity ^0.4.21<0.6.12;
+contract ReportCard{ 
+                     string  public Name;      
+                     string  public RollNO ;    
+                     string  public Batch;
+                     uint public mark1;         
+                     uint public mark2;           
+                     uint public mark3;            
+                     uint public mark4;
+                    string public status;
+                  function  ReportCard(string newName, string newRollNO, string studBatch, uint newmark1, uint newmark2, uint newmark3, uint newmark4, string  newStatus)public{
+                                Name=newName;   
+                                RollNO=newRollNO;    
+                                Batch=studBatch;
+                                mark1=newmark1;
+                                mark2=newmark2;
+                                mark3=newmark3;
+                                mark4=newmark4;
+                               status=newStatus;}
+function getStudentDetails()public view returns(string, string, string,uint, uint, uint, uint, string){
+      return(Name,RollNO,Batch,mark1, mark2, mark3, mark4,status);  }  }
+                            
+
+
+DEPLOYMENT OF THE SMART CONTRACT CAN BE FOUND 0x4670beC10Cf637C1f095f4f0A2847Dd3191C167E  IN 
+https://ropsten.etherscan.io/tx/0x6a604b3d64b2335c5e90396cc01350983ed3241b86febc29d323ab33dc9e9e80
+
+
